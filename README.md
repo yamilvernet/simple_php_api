@@ -1,6 +1,20 @@
 # Simple API con PHP
 
-Este código maneja solicitudes HTTP para crear, actualizar, eliminar y recuperar elementos y sus movimientos de stock a través de una API RESTful. También se utilizan funciones para interactuar con la base de datos, específicamente para realizar consultas SQL utilizando la extensión mysqli. Los datos se manejan en formato JSON tanto en las solicitudes como en las respuestas.
+El programa maneja solicitudes HTTP para crear, actualizar, eliminar y recuperar datos a través de una API RESTful. Los datos se manejan en formato JSON.
+
+### Entidades:
+- Items: El sistema permite crear, actualizar, obtener y eliminar items. Cada item tiene propiedades como un nombre y un código.
+- Movimientos de Stock: Podes registrar movimientos de stock relacionados con los elementos. Estos movimientos pueden ser entradas o salidas de stock y están asociados a un elemento específico.
+
+### Features
+
+- El sistema proporciona una serie de endpoints para interactuar con los items y el stock. Los métodos HTTP utilizados incluyen GET (obtener), POST (crear), PUT (actualizar) y DELETE (eliminar).
+
+- Los datos se almacenan en una base de datos MySQL. El sistema se conecta a la base de datos utilizando la extensión MySQLi de PHP.
+
+- La API utiliza formato JSON para enviar y recibir datos. Podes enviar solicitudes en formato JSON y recibir respuestas en el mismo formato.
+
+## Descripción de la implementación
 
 ```
 ini_set('display_errors', 1);
